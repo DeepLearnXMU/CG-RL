@@ -35,10 +35,22 @@ sh scripts/django/train-pre.sh # pre-train model on the django dataset
 
 ### Step 3: Train the model
 ```bash
-sh scripts/django/train-rl.sh # train model on the django dataset 
+sh scripts/django/train.sh # train model on the django dataset 
 ```
 At last, it will show the accuracy on test dataset.
 
+### Evaluation Results
+We provide the trained model in `checkpoint` for convenience.
+Here is a list of performance results on four datasets using trained models in `checkpoint`
+
+| Dataset | Results      | Metric             |
+| ------- | ------------ | ------------------ |
+| Django  | 78.22        | Accuracy           |
+| CoNaLa  | 26.42        | Corpus BLEU        |
+| ATIS    | 89.95         | Accuracy           |
+| GEO     | 90.35         | Accuracy           |
+
+You can run `sh scripts/<lang>/test.sh` to get these results.
 
 ### Conda Environments
 
