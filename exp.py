@@ -32,8 +32,6 @@ from model.neural_lm import LSTMLanguageModel
 from model.paraphrase import ParaphraseIdentificationModel
 
 from model.parser import Parser
-from model.parser_branch import ParserBranch
-from model.parser_make_label import ParserLabel
 from model.parser_RL import ParserRL
 from model.parser_pre import ParserPre
 from model.prior import UniformPrior, LSTMPrior
